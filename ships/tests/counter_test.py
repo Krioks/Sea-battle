@@ -2,8 +2,8 @@ import pytest
 from ships.naive_implementation import ships_counter
 from pathlib import Path
 
-path_to_examples = Path(__file__).parent.parent / 'examples_of_maps/'
-path_to_wrong_examples = Path(__file__).parent.parent / 'wrong_examples_of_maps/'
+path_to_examples = Path(__file__).parent.parent / 'examples_of_maps'
+path_to_wrong_examples = Path(__file__).parent.parent /  'wrong_examples_of_maps'
 
 
 def get_list_of_files(path):

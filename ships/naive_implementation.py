@@ -7,7 +7,7 @@ from pathlib import Path
 
 def get_list_of_ships() -> list:
     path_to_file = Path(args.path)
-    full_path_to_file = Path(__file__).parent.parent / path_to_file
+    full_path_to_file = Path(__file__).parent / path_to_file
     with open(full_path_to_file, 'r') as f:
         fields = f.read()
     return list(map(list, fields.splitlines()))
