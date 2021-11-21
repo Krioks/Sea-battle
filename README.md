@@ -13,3 +13,29 @@ At the moment, a simple check option has been implemented,
 and a test has been written that covers possible options 
 for files from the **examples_of_maps** folder.
 
+To run the project file you need: 
+* run **Powershell**/**cmd** or **terminal** in _ships_ folder
+* type:
+```bash
+python3 .\naive_implementation.py -path path_to_map
+```
+default value – `examples_of_maps/5.txt`
+* The output will be a list with the weights of all ships, and the number of ships(lengths of list). 
+
+
+To run the project test, you need:
+* install `pytest`:
+  * `pip install pytest` or `pip install -r requirements.txt`
+* run **Powershell**/**cmd** or **terminal** in _tests_ folder
+* type:
+```bash
+pytest --tb=native 
+```
+
+To run the separate test , you need:
+* run **Powershell**/**cmd** or **terminal** in _tests_ folder
+* type:
+```bash
+pytest counter_test.py::test_ship_counter --tb=native 
+```
+
