@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  ships:
+    build: ships/
+    command: python naive_implementation.py
+
+  tests:
+    build: ships/
+    command: pytest tests/counter_test.py --tb=native
+    depends_on:
+      - ships
