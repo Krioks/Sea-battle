@@ -39,3 +39,7 @@ To run the separate test , you need:
 pytest counter_test.py::test_ship_counter --tb=native 
 ```
 
+## Docker
+
+```docker-compose build && docker-compose up -d```
+
